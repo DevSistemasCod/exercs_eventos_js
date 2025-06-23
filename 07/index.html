@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <form id="formulario" onreset="confirmarReset(event)">
+      <label for="nomeInput">Nome:</label>
+      <input type="text" id="nomeInput"/>
+      <p id="mensagemNome"></p>
+
+      <label for="emailInput">E-mail:</label>
+      <input type="email" id="emailInput" />
+      <p id="mensagemEmail"></p>
+
+      <label for="cpfInput">CPF:</label>
+      <input type="text" id="cpfInput" maxlength="14" />
+      <p id="mensagemCpf"></p>
+
+      <p id="resultado"></p>
+      <button id="validarBtn">Validar</button>
+      <button type="reset">Limpar</button>
+
+    </form>
+  </body>
+</html>

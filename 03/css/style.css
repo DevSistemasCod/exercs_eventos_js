@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.conteudo {
+  flex: 1;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.menuLateral {
+  background-color: #333;
+  padding-top: 20px;
+  display: flex;
+  width: 100%;
+  flex-direction: row; /* Altera a direção do flex container para horizontal */
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.btnDropdown {
+  padding: 6px 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ccc;
+  display: block;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.menuLateral a, .btnDropdown {
+  padding: 6px 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ccc;
+  display: block;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  margin: 0 10px; /* Espaçamento entre os itens do menu */
+}
+
+.menuLateral a:hover, .btnDropdown:hover {
+  color: #fff;
+  background-color: #201e1e;
+}
+
+.menuDropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #262626;
+  padding: 8px;
+  min-width: 100%;
+  white-space: nowrap;
+  border: 1px solid #444;
+}
+
+.menuDropdown.exibir {
+  display: block;
+}
+
+.colunaEsquerda {
+  width: 20%;
+  height: auto;
+  background-color: #333;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header id="menuNavegacao" aria-label="navigation bar">
+      <div class="conteiner">
+        <div class="comecoBarraDeNavegcao">
+          <a class="logo">
+            <img src="imagens/logo.jpg"/>
+          </a>
+          <nav class="menu">
+            <ul class="barraMenuNav">
+              <li>
+                <button class="linkNavegacao dropdownBotao" data-dropdown="dropdown1">
+                  Agendar
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown1" class="dropdown">
+                  <ul role="menu">
+                    <li role="menuItem">
+                      <a class="linkDropdown">
+                        <i class="bx bx-calendar" style="color: #616361"></i>
+                        <div>
+                          <span class="títuloLinkDropdown">Agende um Horário</span>
+                          <p>Após o agendamento entraremos em contato.</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuItem">
+                      <a class="linkDropdown">
+                        <i class="bx bxl-whatsapp" style="color: #16e416"></i>
+                        <div>
+                          <span class="títuloLinkDropdown">Whatsapp</span>
+                          <p>Atendimento Personalizado</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuItem">
+                      <a class="linkDropdown">
+                        <i class="bx bx-support" style="color: #1661e4"></i>
+                        <div>
+                          <span class="títuloLinkDropdown">Atendimento Online</span>
+                          <p>Fale com um dos nossos colaboradores</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul role="menu">
+                    <li class="tituloDropdown">
+                      <span class="títuloLinkDropdown">Especialidades</span>
+                    </li>
+                    <li role="menuItem">
+                      <a class="linkDropdown">
+                        <i class="bx bx-conversation" style="color: #aa0cd1"></i>
+                        Fonoaudiologia
+                      </a>
+                    </li>
+                    <li role="menuItem">
+                      <a class="linkDropdown">
+                        <i class="bx bx-body" style="color: #68636a"></i>
+                        Fisioterapia
+                      </a>
+                    </li>
+                    <li role="menuItem">
+                      <a class="linkDropdown">
+                        <i class="bx bxs-florist" style="color: #fe8e43"></i>
+                        Ioga
+                      </a>
+                    </li>
+                    <li role="menuItem">
+                      <a class="linkDropdown">
+                        <i class="bx bx-stats" style="color: #43fe8b"></i>
+                        Massoterapia
+                      </a>
+                    </li>
+                    <li role="menuItem">
+                      <a class="linkDropdown">
+                        <i class="bx bx-loader-circle" style="color: #fe43a4"></i>
+                        Acupuntura
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button class="linkNavegacao dropdownBotao" data-dropdown="dropdown2"
+                  aria-haspopup="true" aria-expanded="false" aria-label="discover">
+                  Planos de Saúde
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown2" class="dropdown">
+                  <ul role="menu">
+                    <li>
+                      <span class="títuloLinkDropdown">Unimed</span>
+                    </li>
+                    <li role="menuItem">
+                      <a class="linkDropdown">Unimed - Nacional</a>
+                    </li>
+                    <li role="menuItem">
+                      <a class="linkDropdown">Unimed - Regional</a>
+                    </li>
+                    <li role="menuItem">
+                      <a class="linkDropdown">Unimed - Flex</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="linkNavegacao">Localização</a></li>
+              <li><a class="linkNavegacao">Trabalhe Conosco</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="fimBarraNavegacao">
+          <div class="conteinerDireito">
+            <form class="search" role="search">
+              <input type="search" name="search" placeholder="Search" />
+              <i class="bx bx-search" aria-hidden="true"></i>
+            </form>
+          </div>
+
+          <button id="hamburgerBtn" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

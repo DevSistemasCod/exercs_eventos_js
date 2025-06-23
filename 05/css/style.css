@@ -1,0 +1,47 @@
+#menuLateral a {
+  position: absolute;
+  left: -80px; /* Posição inicial */
+  transition: left 0.4s ease-in-out; /* Transição suave */
+  padding: 15px;
+  width: 80px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+/* Classe para exibir o botão */
+.menuItem.exibir {
+  left: 0 !important; /* Garante que a posição seja alterada */
+}
+
+/* Cores específicas para cada botão */
+#sobre {
+  top: 20px;
+  background-color: #04aa6d;
+}
+
+#informacoes {
+  top: 80px;
+  background-color: #2196f3;
+}
+
+#projeto {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contato {
+  top: 200px;
+  background-color: #555;
+}
+
+/* Ajuste para o texto na página */
+.alinharTexto {
+  margin-left: 80px;
+}
+
+/* Classe para exibir o botão */
+.menuItem.exibir {
+  left: 0; /* Botão completamente visível na tela */
+}
